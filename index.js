@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 
 app.get("/", (req, res) => {
-    res.send("Welcome to Node.js Application");
+    res.send("Welcome to Node.js App");
 });
 
 app.get("/api/message", (req, res) => {
