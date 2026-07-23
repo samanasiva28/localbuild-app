@@ -5,6 +5,10 @@ const app = express();
 
 app.use(cors());
 
+app.get("/", (req, res) => {
+    res.send("Welcome to Node.js Application");
+});
+
 app.get("/api/message", (req, res) => {
     res.json({
         message: "Hello Buddy! Backend is working successfully 🚀"
